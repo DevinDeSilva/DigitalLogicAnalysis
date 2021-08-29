@@ -1,7 +1,11 @@
+import logging
 import pathlib
 import unittest
 
 from DigitalLogicAnalysis.inputs.max_terms import MaxTerms
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 class InputModuleTestCase(unittest.TestCase):
@@ -19,4 +23,3 @@ class InputModuleTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
