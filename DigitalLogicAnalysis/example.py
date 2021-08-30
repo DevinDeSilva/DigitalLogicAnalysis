@@ -1,4 +1,4 @@
-from inputs.max_terms import MaxTerms
+from Inputs.max_terms import MaxTerms
 
 a = MaxTerms(2)
 print(a)

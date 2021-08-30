@@ -1,11 +1,16 @@
 import logging
+import os
 import pathlib
+import sys
 import unittest
 
-from DigitalLogicAnalysis.inputs.max_terms import MaxTerms
+from DigitalLogicAnalysis.Inputs.max_terms import MaxTerms
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+
+myPath = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, myPath + '/../')
 
 
 class InputModuleTestCase(unittest.TestCase):

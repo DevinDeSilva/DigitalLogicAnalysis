@@ -7,5 +7,5 @@ logger.setLevel(logging.INFO)
 
 __all__ = [
     'exceptions',
-    'inputs',
+    'Inputs',
 ]
