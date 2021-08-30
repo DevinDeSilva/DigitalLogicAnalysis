@@ -1,5 +1,4 @@
 import logging
-import os
 import pathlib
 import sys
 import unittest
@@ -9,7 +8,7 @@ from DigitalLogicAnalysis.Inputs.max_terms import MaxTerms
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-myPath = os.path.dirname(os.path.abspath(__file__))
+myPath = pathlib.Path(__file__).parent.parent.parent.resolve()
 sys.path.insert(0, myPath + '/../')
 
 
